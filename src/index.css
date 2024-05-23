@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("/shloprg.otf");
+}
+
+@font-face {
+  font-family: "Monster";
+  src: url("/MeltedMonster.ttf");
+}
+@font-face {
+  font-family: "Space";
+  src: url("/StarJediHollow-A4lL.ttf");
+}
+@font-face {
+  font-family: "Solar";
+  src: url("/solarspace.ttf");
+}
+
+@font-face {
+  font-family: "Gundam";
+  src: url("/gundam.otf");
+}
