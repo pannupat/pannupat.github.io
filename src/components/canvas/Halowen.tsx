@@ -15,7 +15,7 @@ type GLTFResult = {
 };
 
 const Haloween = ({ isMobile }: { isMobile: boolean }) => {
-  const haloweenmodel = useGLTF("/gundam4.glb") as GLTFResult;
+  const haloweenmodel = useGLTF("/PortFolioWeb/gundam4.glb") as GLTFResult;
   const { animations } = haloweenmodel;
 
   const mixer = useRef<THREE.AnimationMixer>();
