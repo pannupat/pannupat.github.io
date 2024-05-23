@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Golem_model = ({ isMobile }: { isMobile: boolean }) => {
-  const golemmodel = useGLTF("/PortFolioWeb/Golem/golem_clean.gltf");
+  const golemmodel = useGLTF("./Golem/golem_clean.gltf");
 
   return (
     <mesh>

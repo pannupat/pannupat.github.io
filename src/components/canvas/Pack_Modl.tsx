@@ -14,7 +14,7 @@ type GLTFResult = {
 };
 
 const Pack_Modl = ({ isMobile }: { isMobile: boolean }) => {
-  const packmodel = useGLTF("/PortFolioWeb/ANIMATIONPACK.glb") as GLTFResult;
+  const packmodel = useGLTF("/ANIMATIONPACK.glb") as GLTFResult;
   const { animations } = packmodel;
   const meshRef = useRef(null);
   const mixer = useRef<THREE.AnimationMixer>();
