@@ -1,0 +1,11 @@
+Model Information:
+* title:	ben10_upgrade
+* source:	https://sketchfab.com/3d-models/ben10-upgrade-ae452a2d04414844ae079a58a00d139e
+* author:	Goldnown (https://sketchfab.com/Goldnown)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "ben10_upgrade" (https://sketchfab.com/3d-models/ben10-upgrade-ae452a2d04414844ae079a58a00d139e) by Goldnown (https://sketchfab.com/Goldnown) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
