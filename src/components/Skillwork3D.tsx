@@ -37,7 +37,7 @@ const SKillCard4: React.FC<Skillwork3D> = ({ index, name, image, video }) => {
       >
         <div
           style={{ cursor: "pointer" }}
-          className="group relative m-0 flex h-64 w-[300px] rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg  xs:w-[320px] border-8 border-fuchsia-400 border-opacity-50"
+          className="group relative m-0 flex h-64 w-[300px] rounded-3xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg  xs:w-[320px] border-8 border-fuchsia-400 border-opacity-50"
         >
           <div className="z-10 h-full w-full overflow-hidden rounded-xl border  opacity-90 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
             <img

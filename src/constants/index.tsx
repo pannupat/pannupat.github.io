@@ -258,7 +258,10 @@ const hobbiess = [
     name: "Animation/Series",
     icon: movie,
     iconBg: "rgba(255, 255, 255, 0.5)",
-    points: ["แนวหนังจะเป็น Hero DC, Marvvel, Disney และ Animation"],
+    points: [
+      "TH:แนวหนังที่ชอบจะเป็น  Disney Pixar Chinese Animation และ Japan Animation",
+      "EN: My favorite type of movie is Disney Pixar Chinese Animation and Japan Animation",
+    ],
   },
   {
     title: "Exercise",

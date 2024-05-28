@@ -62,7 +62,7 @@ import bikverse from "./bikeverse.png";
 import boat from "./boat-video.mp4";
 import astonn from "./Astonn.mp4";
 import silva from "./Silvaa.mp4";
-import packClip from "./packClip.mp4";
+import packClip from "./NewVideo.mp4";
 
 import antdClip from "./AntClip.mp4";
 import rickandmortyClip from "./RickandMortyClip.mp4";
