@@ -136,11 +136,17 @@ const experiences: Experience[] = [
       "Build APIs for data retrieval from Rick and Morty APIs with Axios and React TypeScript.",
     ],
     image: (
-      <img
-        className="rounded-xl w-[500px] h-[full]"
-        src={rickandmorty}
-        alt=""
-      />
+      <Link
+        to={
+          "https://github.com/pannupat/AntCssFramework/tree/main/src/fetchdata"
+        }
+      >
+        <img
+          className="rounded-xl w-[500px] h-[full]"
+          src={rickandmorty}
+          alt=""
+        />
+      </Link>
     ),
   },
   {
@@ -152,7 +158,9 @@ const experiences: Experience[] = [
       "Create APIs for retrieving data from Pokemon APIs with RTK Query and React TypeScript",
     ],
     image: (
-      <img className="rounded-xl w-[500px] h-[full]" src={pokemon} alt="" />
+      <Link to={"https://github.com/pannupat/RTKQueeryApi/tree/main/src"}>
+        <img className="rounded-xl w-[500px] h-[full]" src={pokemon} alt="" />
+      </Link>
     ),
   },
   {
@@ -163,7 +171,12 @@ const experiences: Experience[] = [
     points: [
       "Create a Web Quiz using the information contained in JSON Quiz using Redux Toolkit and Antd and Date Fns.",
     ],
-    image: <img className="rounded-xl w-[500px] h-[full]" src={quiz} alt="" />,
+    image: (
+      <Link to={"https://github.com/pannupat/Redux_Quiz"}>
+        {" "}
+        <img className="rounded-xl w-[500px] h-[full]" src={quiz} alt="" />
+      </Link>
+    ),
   },
   {
     title: "Register Redux",
@@ -174,7 +187,13 @@ const experiences: Experience[] = [
       "Create a new subscription form using Redux and Antd by showing that your registration information has been stored in the Redux Store.",
     ],
     image: (
-      <img className="rounded-xl w-[500px] h-[full]" src={register} alt="" />
+      <Link
+        to={
+          "https://github.com/pannupat/AntCssFramework/tree/main/src/workshop_redux"
+        }
+      >
+        <img className="rounded-xl w-[500px] h-[full]" src={register} alt="" />
+      </Link>
     ),
   },
 ];

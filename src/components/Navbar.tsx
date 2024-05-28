@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
@@ -6,12 +6,24 @@ import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 import { motion } from "framer-motion";
 import { animationStart, reveal } from "../utils/animation";
+import Lenis from "lenis";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const lenis = useRef<Lenis>();
+  useEffect(() => {
+    lenis.current = new Lenis();
+
+    function raf(time: DOMHighResTimeStamp) {
+      lenis.current && lenis.current.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -59,7 +71,8 @@ const Navbar = () => {
               className="flex items-center gap-2"
               onClick={() => {
                 setActive("");
-                window.scrollTo(0, 0);
+
+                lenis.current?.scrollTo(0);
               }}
             >
               <p
@@ -94,7 +107,13 @@ const Navbar = () => {
                     } hover:text-lime-500 hover:bg-blue-500 hover:bg-opacity-20 bg-white bg-opacity-30 border-2 p-2 px-3 rounded-xl text-[18px] font-gundam cursor-pointer`}
                     onClick={() => setActive(nav.title)}
                   >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    <div
+                      onClick={() => {
+                        lenis.current?.scrollTo(`#${nav.id}`);
+                      }}
+                    >
+                      {nav.title}
+                    </div>
                   </li>
                 </motion.div>
               ))}
@@ -149,7 +168,13 @@ const Navbar = () => {
                           setActive(nav.title);
                         }}
                       >
-                        <a href={`#${nav.id}`}>{nav.title}</a>
+                        <div
+                          onClick={() => {
+                            lenis.current?.scrollTo(`#${nav.id}`);
+                          }}
+                        >
+                          {nav.title}
+                        </div>
                       </li>
                     </motion.div>
                   ))}

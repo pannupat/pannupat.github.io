@@ -11,7 +11,7 @@ interface SkillworkST {
   index: number;
   name: string;
   image: string;
-  video: string; // เพิ่มฟิลด์วิดีโอ
+  video: string;
 }
 
 const SKillCard1: React.FC<SkillworkST> = ({ index, image, video }) => {

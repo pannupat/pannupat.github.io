@@ -15,8 +15,8 @@ type GLTFResult = {
 };
 
 const Haloween = ({ isMobile }: { isMobile: boolean }) => {
-  const haloweenmodel = useGLTF("/gundam4.glb") as GLTFResult;
-  const { animations } = haloweenmodel;
+  const halloweenModel = useGLTF("/gundam4.glb") as GLTFResult;
+  const { animations } = halloweenModel;
 
   const mixer = useRef<THREE.AnimationMixer>();
   const meshRef = useRef<Mesh>(null);
@@ -62,20 +62,20 @@ const Haloween = ({ isMobile }: { isMobile: boolean }) => {
       />
       <pointLight intensity={2} />
       <primitive
-        object={haloweenmodel.scene}
-        scale={isMobile ? 1.0 : 1.8}
-        position={isMobile ? [-0, 1.9, -0] : [-1, -0, 0]}
+        object={halloweenModel.scene}
+        scale={isMobile ? 0.9 : 1.8}
+        position={isMobile ? [-0, 2.4, -0] : [-1, -0, 0]}
         rotation={[0, 1.3, 0]}
       />
     </mesh>
   );
 };
 
-const HalowenCanvas = () => {
+const HalloweenCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width:2000px)");
+    const mediaQuery = window.matchMedia("(max-width: 2000px)");
 
     setIsMobile(mediaQuery.matches);
 
@@ -89,6 +89,10 @@ const HalowenCanvas = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
+
+  useEffect(() => {
+    console.log("isMobile:", isMobile);
+  }, [isMobile]);
 
   return (
     <Canvas
@@ -114,4 +118,4 @@ const HalowenCanvas = () => {
   );
 };
 
-export default HalowenCanvas;
+export default HalloweenCanvas;
