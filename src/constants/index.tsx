@@ -137,6 +137,8 @@ const experiences: Experience[] = [
     ],
     image: (
       <Link
+        style={{ cursor: "pointer" }}
+        className="hover:shadow-sm hover:shadow-white "
         to={
           "https://github.com/pannupat/AntCssFramework/tree/main/src/fetchdata"
         }
@@ -158,7 +160,11 @@ const experiences: Experience[] = [
       "Create APIs for retrieving data from Pokemon APIs with RTK Query and React TypeScript",
     ],
     image: (
-      <Link to={"https://github.com/pannupat/RTKQueeryApi/tree/main/src"}>
+      <Link
+        style={{ cursor: "pointer" }}
+        className="hover:shadow-sm hover:shadow-white "
+        to={"https://github.com/pannupat/RTKQueeryApi/tree/main/src"}
+      >
         <img className="rounded-xl w-[500px] h-[full]" src={pokemon} alt="" />
       </Link>
     ),
@@ -172,7 +178,11 @@ const experiences: Experience[] = [
       "Create a Web Quiz using the information contained in JSON Quiz using Redux Toolkit and Antd and Date Fns.",
     ],
     image: (
-      <Link to={"https://github.com/pannupat/Redux_Quiz"}>
+      <Link
+        style={{ cursor: "pointer" }}
+        className="hover:shadow-sm hover:shadow-white "
+        to={"https://github.com/pannupat/Redux_Quiz"}
+      >
         {" "}
         <img className="rounded-xl w-[500px] h-[full]" src={quiz} alt="" />
       </Link>
@@ -188,6 +198,8 @@ const experiences: Experience[] = [
     ],
     image: (
       <Link
+        style={{ cursor: "pointer" }}
+        className="hover:shadow-sm hover:shadow-white "
         to={
           "https://github.com/pannupat/AntCssFramework/tree/main/src/workshop_redux"
         }
