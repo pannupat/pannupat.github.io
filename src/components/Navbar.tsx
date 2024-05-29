@@ -104,7 +104,7 @@ const Navbar = () => {
                       active === nav.title
                         ? "text-lime-500"
                         : "text-secondary  "
-                    } hover:text-lime-500 hover:bg-blue-500 hover:bg-opacity-20 bg-white bg-opacity-30 border-2 p-2 px-3 rounded-xl text-[18px] font-gundam cursor-pointer`}
+                    } hover:text-lime-500 hover:bg-fuchsia-400  bg-white bg-opacity-30 border-2 p-2 px-3 rounded-xl text-[18px] font-gundam cursor-pointer`}
                     onClick={() => setActive(nav.title)}
                   >
                     <div
